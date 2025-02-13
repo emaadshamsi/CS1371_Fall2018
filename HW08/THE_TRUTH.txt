@@ -1,0 +1,15 @@
+e                                                                            
+3                                                                            
+pi                                                                           
+4                                                                            
+area of a square with side length 1                                          
++-------+                                                                    
+|       |                                                                    
+|       |                                                                    
+|       |                                                                    
++-------+                                                                    
+area of a circle with diameter 1                                             
+             _____                                                           
+          .-'     '-.                                                        
+        .'           '.                                                      
+       /                                                                     

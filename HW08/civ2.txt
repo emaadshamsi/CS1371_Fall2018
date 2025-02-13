@@ -1,0 +1,3 @@
+germany.txt:frederick
+cs1371.txt:smith
+england.txt:churchill

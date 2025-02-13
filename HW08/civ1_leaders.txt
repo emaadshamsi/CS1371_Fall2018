@@ -1,0 +1,11 @@
+kantwon:
+Kantwon Rogers is a graduate student in the Human-Computer Interaction degree program. 
+He also earned a BS in Computer Engineering and a MS in Electrical and Computer Engineering from Georgia Tech.
+His research interests lie in the area of computer science education and increasing the involvement and success of Black students in the field.
+elizabeth:
+Elizabeth I Tudor was a Queen of England
+who brought stability and prosperity to the country.
+Famous for never marrying, she managed a perilous political situtation
+and oversaw the defeat of the Spanish Armada.
+Her reign is famous for the flourishing of English culture
+exemplified by Shakespeare and Marlowe.

@@ -1,0 +1,8 @@
+cs1371.txt:smith
+cs1371.txt:kantwon
+cs1371.txt:stallworth
+england.txt:elizabeth
+england.txt:victoria
+england.txt:churchill
+germany.txt:bismarck
+germany.txt:frederick

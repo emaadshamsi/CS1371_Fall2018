@@ -1,0 +1,3 @@
+function [out1] = myFunc(in1, in2)
+
+end

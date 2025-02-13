@@ -1,0 +1,29 @@
+frederick:
+Frederick the Great was a King of Prussia whose military acumen
+expanded Prussian territory and transformed it into a major European power.
+He was noted for his army reforms and victories against Austria
+as well as his defiance during the Seven Years' War
+where despite near defeat he held out until political change in Russia
+(the Miracle of the House of Brandenburg) allowed him to emerge victorious.
+He was also a noted patron of the arts and sciences and a friend of Voltaire
+and came to embody the Enlightenment prince.
+smith:
+David Smith is and Aerospace Engineer with 31 years of experience in industry. 
+He is in his 20th year as a Lecturer in the College of Computing. 
+His primary accomplishment has been to design and implement CS1371, a course designed to teach Computer Science to Engineering students using the Matlab language. 
+He wrote a text book containing the course content and has just finished drafting a video series for use in a “flipped classroom.” He has also taught a wide array of computer science classes.
+In his previous career in industry, he was a software specialist and system architect. 
+His most notable assignment was as the Technical Program Manager of the Pilot’s Associate program, 
+a DARPA research program to determine the feasibility of applying artificial intelligence to support the pilot of a single-seat stealth aircraft. 
+He has a significant number of publications from that experience, and was awarded the AIAA National Digital Avionics Award 
+which he accepted on behalf of the 50 or more specialists who made that project work.  
+He retired as one of the founding Technical Fellows of the Lockheed-Martin Corporation.
+churchill:
+Winston Churchill was a prime minister of Great Britain during World War II.
+After a brief stint as First Lord of the Admiralty during World War I
+where he advocated for the diastrous Gallipoli campaign
+he was in the political wilderness until the start of World War II
+where as a strong advocate of rearmament against the German threat
+he was made prime minister after a failed intervention in Norway.
+His defiant nature was critical in inspiring Britain during the Battle of Britain
+and the eventual triumph over Germany during World War II.

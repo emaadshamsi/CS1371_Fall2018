@@ -1,0 +1,24 @@
+kantwon:
+Kantwon Rogers is a graduate student in the Human-Computer Interaction degree program. 
+He also earned a BS in Computer Engineering and a MS in Electrical and Computer Engineering from Georgia Tech.
+His research interests lie in the area of computer science education and increasing the involvement and success of Black students in the field.
+smith:
+David Smith is and Aerospace Engineer with 31 years of experience in industry. 
+He is in his 20th year as a Lecturer in the College of Computing. 
+His primary accomplishment has been to design and implement CS1371, a course designed to teach Computer Science to Engineering students using the Matlab language. 
+He wrote a text book containing the course content and has just finished drafting a video series for use in a “flipped classroom.” He has also taught a wide array of computer science classes.
+In his previous career in industry, he was a software specialist and system architect. 
+His most notable assignment was as the Technical Program Manager of the Pilot’s Associate program, 
+a DARPA research program to determine the feasibility of applying artificial intelligence to support the pilot of a single-seat stealth aircraft. 
+He has a significant number of publications from that experience, and was awarded the AIAA National Digital Avionics Award 
+which he accepted on behalf of the 50 or more specialists who made that project work.  
+He retired as one of the founding Technical Fellows of the Lockheed-Martin Corporation.
+stallworth:
+Cedric Stallworth has been an administrator of educational programs at Georgia Tech for the past twenty years. 
+He presently serves as Assistant Dean in the College of Computing for Outreach, Enrollment and Community. 
+In this role, he addresses the national shortage of computing talent 
+by creating a sustainable pipeline of talented students that extends from elementary school to Georgia Tech Alumni. 
+Since becoming Assistant Dean in 2006, Cedric has held the positions of Lecturer, Research Scientist and Instructor. 
+He has received several awards as a teacher and his students hold him in the highest regard for his passion, caring nature and engaging and entertaining lectures.
+Having received his Bachelor's and Master's Degree from Georgia Tech, Cedric's commitment to Georgia Tech and its students is indisputable.
+He is dedicated to motivating the creativity of students by exposing them to numerous opportunities and possibilities that computing provides.
