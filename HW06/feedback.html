@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+html {
+    font-family: 'Open Sans';
+}
+.fa-check {
+    color: forestgreen;
+}
+.fa-times {
+    color: darkred;
+}
+.display-1 {
+    font-size: 2.5em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element {
+    margin-right: 30px;
+}
+.test-case {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.test-header {
+    margin-left: -50px;
+}
+.call {
+    font-family: "Courier New";
+}
+.variable-name {
+    font-family: "Courier New";
+}
+.variable-value {
+    font-family: "Courier New";
+}
+.problem div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exception {
+    color: darkred;
+    font-family: "Courier New";
+    margin-bottom: 0px;
+}
+.problem-row:hover {
+    cursor: pointer;
+}
+.table-responsive {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    margin: 20px;
+}
+h3 {
+    font-size: 130%;
+}
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+pre {
+display:inline;
+}
+.diffnomatch {
+    background: #e5d5e8;
+}
+.right {
+    background: #dbf2fc;
+}
+.left {
+    background: #f3e9d1;
+}
+.diffsoft {
+    color: #888;
+}
+.diffskip {
+    color: #888;
+    background: #e0e0e0;
+}
+.bold {
+    font-weight:bold;
+}
+.merged {
+    background-color: #eaeaea;
+}
+span {
+    font-family: "Courier New";
+}
+.diff-equal {
+    background-color: white;
+}
+.diff-delete {
+    background-color: #FF8A8A;
+    text-decoration: line-through;
+}
+.diff-insert {
+    background-color: lightgreen;
+}
+.diff-invisible {
+    color: white;
+}
+.diff-omitted {
+    color:#b5b5b5;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $(".problem-row").on("click",function(){
+        window.location = $(this).data("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-12">
+<h1 class="display-1">
+Feedback for Emaad Bilal Shamsi (eshamsi3)
+</h1>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+Problem
+</th>
+<th>
+Points Earned (Plus Comments)
+</th>
+<th>
+Points Possible
+</th>
+</tr>
+</thead>
+<tr class="problem-row" data-href="#problem1">
+<td>
+<p>
+1
+</p>
+</td>
+<td>
+<p>
+ABCs_conditionals
+</p>
+</td>
+<td>
+<p>
+5.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+5.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem2">
+<td>
+<p>
+2
+</p>
+</td>
+<td>
+<p>
+fluxCapacitor
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem3">
+<td>
+<p>
+3
+</p>
+</td>
+<td>
+<p>
+sandlot
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem4">
+<td>
+<p>
+4
+</p>
+</td>
+<td>
+<p>
+jurassicPark
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem5">
+<td>
+<p>
+5
+</p>
+</td>
+<td>
+<p>
+spaceJam2
+</p>
+</td>
+<td>
+<p>
+14.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem6">
+<td>
+<p>
+6
+</p>
+</td>
+<td>
+<p>
+oceans11
+</p>
+</td>
+<td>
+<p>
+6.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<strong>Total</strong>
+</td>
+<td>
+<p>
+82.0 (+1.1)
+</p>
+</td>
+<td>
+<p>
+100.0
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem1" class="problem col-12">
+<h2>
+ABCs_conditionals
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE9jdCAgMSAyMTo0ODo0OSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAJwAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hkGRi+P2fgQEAJPsDbQ8AAAAmAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnhEDE5DFD+QDAB5KAYEPAAAAKwAAAHic42NgYLAAYjYg5gBiTiYGMGCF8hmhbEYGZobMPGMGJigfLAEEAC0jAYkPAAAAJwAAAHic42NgYDAAYjYg5oDSIMAK5TMCMROYZmbIzDMBsoEQKAAAHkoBeg8AAAAnAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnimQZGL48Z+BAQAlFwNuDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeGQMTkMUF5AMAHl4BgA8AAAArAAAAeJzjY2BgsABiNiDmAGJOJgYwYIXyGaFsRgZmhsw8cwYmGB8EgDQALYIBkQ8AAAApAAAAeJzjY2BgMABiNiDmgNIgwArlMwIxE5hmZsjMswCymRgYeRgYAB6MAYc=" download="ABCs_conditionals_rubrica.mat">ABCs_conditionals_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[A, B, C, D, E, F, G] = ABCs_conditionals(in1, in2, in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p>Points earned for this test case: 2.0/2.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[A, B, C, D, E, F, G] = ABCs_conditionals(in5, in6, in7, in8)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p>Points earned for this test case: 3.0/3.0</p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem2" class="problem col-12">
+<h2>
+fluxCapacitor
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE9jdCAgMSAyMTo0ODo0OSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAKAAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hAwsDE8MjdgYGACG3Al0PAAAAKAAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4RAwsDEwM/DwMDAB6EAZAPAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4xAxOQFQHkAwAfeAHLDwAAACgAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeCQMLAxPDCnYGBgAg7QImDwAAACgAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeKQMLAxPDSnYGBgAg+wIoDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeGQMTkOUK5AMAH0oBuw8AAAAoAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnjkDCwMTwwV2BgYAIasCUQ8AAAAnAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmngUDCwMTwx2gJAAh3wJcDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeJQMTkFUB5AMAIDQB8Q==" download="fluxCapacitor_rubrica.mat">fluxCapacitor_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[str1] = fluxCapacitor(in1, in2, in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">str1: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[str2] = fluxCapacitor(in4, in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">str2: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[str3] = fluxCapacitor(in7, in8, in9)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">str3: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 7.0/7.0</p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem3" class="problem col-12">
+<h2>
+sandlot
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE9jdCAgMSAyMTo0ODo0OSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hAxOQdQLIBwAhJAI5DwAAACcAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeEZBkYvj9n4EBACUFA24PAAAAMgAAAHic42NgYHAAYjYg5gBiFgYIYIXyGYGYE0wzM2TmGTMIQPnJpUVlqUmJOTlQ9QBpUwVfDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeCQMTkJUC5AMAH7IB2A8AAAAmAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnikDE5AlAuQDAB58AYkPAAAALQAAAHic42NgYLAAYjYg5gBiFgYIYIXyGeE0M0NmnhmDAJSfllhckpSYkwMAPBgE4Q8AAAAmAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnjkDE5BVC+QDACA0AfQPAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4FAxOQFQDkAwAfigHIDwAAADQAAAB4nONjYGBwAGI2IOYAYhYGCGCF8hmBmBtMMzNk5lkyCED52Xmlydk5qUmJOTlg9QBvUQYx" download="sandlot_rubrica.mat">sandlot_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[str1] = sandlot(in1, in2, in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">str1: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[str2] = sandlot(in4, in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">str2: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[str3] = sandlot(in7, in8, in9)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">str3: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 7.0/7.0</p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem4" class="problem col-12">
+<h2>
+jurassicPark
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE9jdCAgMSAyMTo0ODo0OSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAALgAAAHic42NgYLAAYjYg5gBiFgYIYIXyGaFsRgZmhsw8QwYBKD9Etyi1AkgDADbqA10PAAAALgAAAHic42NgYLAAYjYg5gBiFgYIYIXyGaFsRgZmhsw8IwYBKD9Etyi1AkgDADb8A14PAAAANAAAAHic42NgYHAAYjYg5gBiFgYIYIXyGYGYG0wzM2TmGTMIQPnBJanp+cWJpUWlxWD1AG7UBkgPAAAANgAAAHic42NgYHAAYjYg5gBiFgYIYIXyGYGYF0wzM2TmmTAIQPlORYnJGZn5xYmlRaXFQD4AcQMHAw8AAAAuAAAAeJzjY2BgsABiNiDmAGIWBghghfIZoWxGBmaGzDxTBgEoP0S3KLUCSAMANzIDYQ8AAAA2AAAAeJzjY2BgcABiNiDmAGIWBghghfIZgZgXTDMzZOaZMQhA+U5FickZmfnFiaVFpcVAPgBxNwcF" download="jurassicPark_rubrica.mat">jurassicPark_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = jurassicPark(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = jurassicPark(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = jurassicPark(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 7.0/7.0</p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem5" class="problem col-12">
+<h2>
+spaceJam2
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE9jdCAgMSAyMTo0ODo0OSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAKQAAAHic42NgYDAAYjYg5oDSIMAK5TMCMROYZmbIzDMEspkYAmwYGAAgEgH/DwAAAE0AAAB4nONjYGCIAGI2IOYAYhYGCGCF8hmBWAVMMzNk5hkxCED5jsUZ+dk6RiY6prqGBjohGakKhsbmhgohicU6voklOYlJOoYGIHMAVoYL7g8AAAApAAAAeJzjY2BgMABiNiDmgNIgwArlMwIxE5hmZsjMMwaymRgUzBkYAB9XAcwPAAAATwAAAHic42NgYIgAYjYg5gBiFgYIYIXyGYFYDUwzM2TmmTAIQPkuiWWZKQrBOhYGOqa6hoY67qn5RemZiQohqckZOo4pmSmJxTrGBgwMAGixDWAPAAAAKQAAAHic42NgYDAAYjYg5oDSIMAK5TMCMROYZmbIzDMFspkY7FwYGAAgCgH5DwAAAFMAAAB4nONjYGBIAGI2IOYAYhYGCGCF8hmBWBdMMzNk5pkxCED5rqXpqXmpCt5FiUnFOmZGOqa6FjreRaXFJZVgMR2/zOzUnPyU1Pw8HSNjoHoAD8EQ8w8AAAApAAAAeJzjY2BgMABiNiDmgNIgwArlMwIxE5hmZsjMMweymRhEPBgYAB+CAdUPAAAASwAAAHic42NgYIgAYjYg5gBiFgYIYIXyGYFYA0wzM2TmWTAIQPkuiWlplQoupcnZOoYWOua6RjohGakKvpnpGSUQ4WKdcCcdQyMAdsMOLw==" download="spaceJam2_rubrica.mat">spaceJam2_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[result1] = spaceJam2(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">result1: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 4.0/4.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[result2] = spaceJam2(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">result2: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 5.0/5.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[result3] = spaceJam2(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">result3: </span><p><span class="fas fa-times"></span> Dimension Mismatch: <span class="variable-value">1x27</span> expected; <span class="variable-value">1x60</span> given.</p></div></div><p>Points earned for this test case: 0.0/5.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[result4] = spaceJam2(in7, in8)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">result4: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 5.0/5.0</p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem6" class="problem col-12">
+<h2>
+oceans11
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE9jdCAgMSAyMTo0ODo0OSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAKwAAAHic42NgYDAAYjYg5gBiFgYIYIXyGYGYGUwzM2TmGTIIAGkTBW8GACAeAiAPAAAALgAAAHic42NgYLAAYjYg5gBiFgYIYIXyGaFsRgZmhsw8IwYBKD9QwUTBC0gDADMEAp0PAAAAKwAAAHic42NgYDAAYjYg5gBiFgYIYIXyGYGYGUwzM2TmGTMIAGkjBQsGACAEAg0PAAAAKwAAAHic42NgYDAAYjYg5gBiFgYIYIXyGYGYGUwzM2TmmTAIAGkzBTMGACAaAhAPAAAALgAAAHic42NgYLAAYjYg5gBiFgYIYIXyGaFsRgZmhsw8UwYBKN9CwUTBC0gDADJyAocPAAAAKwAAAHic42NgYDAAYjYg5gBiFgYIYIXyGYGYGUwzM2TmmTEIAGljBW8GACBMAiQ=" download="oceans11_rubrica.mat">oceans11_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[winStr1] = oceans11(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">winStr1: </span><p><span class="fas fa-times"></span> Dimension Mismatch: <span class="variable-value">1x46</span> expected; <span class="variable-value">1x55</span> given.</p></div></div><p>Points earned for this test case: 0.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[winStr2] = oceans11(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">winStr2: </span><span class="fas fa-check"></span></div></div><p>Points earned for this test case: 6.0/6.0</p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[winStr3] = oceans11(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">winStr3: </span><p><span class="fas fa-times"></span> Dimension Mismatch: <span class="variable-value">1x56</span> expected; <span class="variable-value">1x55</span> given.</p></div></div><p>Points earned for this test case: 0.0/7.0</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
