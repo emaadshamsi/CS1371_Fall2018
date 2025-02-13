@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+html {
+    font-family: 'Open Sans';
+}
+.fa-check {
+    color: forestgreen;
+}
+.fa-times {
+    color: darkred;
+}
+.display-1 {
+    font-size: 2.5em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element {
+    margin-right: 30px;
+}
+.test-case {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.test-header {
+    margin-left: -50px;
+}
+.call {
+    font-family: "Courier New";
+}
+.variable-name {
+    font-family: "Courier New";
+}
+.variable-value {
+    font-family: "Courier New";
+}
+.problem div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exception {
+    color: darkred;
+    font-family: "Courier New";
+    margin-bottom: 0px;
+}
+.problem-row:hover {
+    cursor: pointer;
+}
+.table-responsive {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    margin: 20px;
+}
+h3 {
+    font-size: 130%;
+}
+.warning {
+    color: #c94f00;
+}
+.feedback-points {
+    font-size: 110%;
+}
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+pre {
+display:inline;
+}
+.diffnomatch {
+    background: #e5d5e8;
+}
+.right {
+    background: #dbf2fc;
+}
+.left {
+    background: #f3e9d1;
+}
+.diffsoft {
+    color: #888;
+}
+.diffskip {
+    color: #888;
+    background: #e0e0e0;
+}
+.bold {
+    font-weight:bold;
+}
+.problem-name {
+    font-family: 'Courier New', monospace;
+}
+.merged {
+    background-color: #eaeaea;
+}
+span {
+    font-family: "Courier New";
+}
+.diff-equal {
+    background-color: white;
+}
+.diff-delete {
+    background-color: #FF8A8A;
+    text-decoration: line-through;
+}
+.diff-insert {
+    background-color: lightgreen;
+}
+.diff-invisible {
+    color: white;
+}
+.diff-omitted {
+    color:#b5b5b5;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $(".problem-row").on("click",function(){
+        window.location = $(this).data("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-12">
+<h1 class="display-1">
+Feedback for Emaad Bilal Shamsi (eshamsi3)
+</h1>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+Problem
+</th>
+<th>
+Points Earned (Plus Comments)
+</th>
+<th>
+Points Possible
+</th>
+</tr>
+</thead>
+<tr class="problem-row" data-href="#problem1">
+<td>
+<p>
+1
+</p>
+</td>
+<td>
+<p>
+ABCs_recursion
+</p>
+</td>
+<td>
+<p>
+5.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+5.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem2">
+<td>
+<p>
+2
+</p>
+</td>
+<td>
+<p>
+unnest
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.6)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem3">
+<td>
+<p>
+3
+</p>
+</td>
+<td>
+<p>
+r_nFib
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.8)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem4">
+<td>
+<p>
+4
+</p>
+</td>
+<td>
+<p>
+recursiveGetPi
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem5">
+<td>
+<p>
+5
+</p>
+</td>
+<td>
+<p>
+determinant
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem6">
+<td>
+<p>
+6
+</p>
+</td>
+<td>
+<p>
+mondrian
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem7">
+<td>
+<p>
+7
+</p>
+</td>
+<td>
+<p>
+anagram
+</p>
+</td>
+<td>
+<p>
+20.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<strong>Total</strong>
+</td>
+<td>
+<p>
+120.0 (+2.9)
+</p>
+</td>
+<td>
+<p>
+120.0
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem1" class="problem col-12">
+<h2 class="problem-name">
+ABCs_recursion
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE5vdiAxOSAxNzowNDo0NyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hAxOQ5QfkAwAfPAG/DwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeEQMTkCUO5AMAHmoBiQ==" download="ABCs_recursion_rubricb.mat">ABCs_recursion_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[A] = ABCs_recursion(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem2" class="problem col-12">
+<h2 class="problem-name">
+unnest
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE5vdiAxOSAxNzowNDo0NyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAASAAAAHic42NgYNBgZGBgA9IcQAxkggErEh+CmRky8wwZ+IDsHwz41TMhiYPUTyCgnhFNfQKJ6g2Q1LMRUM8EZLGSqY8TSAMAtyIEqg8AAACIAAAAeJzjY2Bg4GBmYGAD0UDMyAABrEh8FjDNzJCZZ8TAB2QnMOBXz4gkDlJvgKSejYB6JiCLDapvAon20NpdnFB9BYz47WFCs4eDRPULCPgDXT2yPziZCPuDEarPAkkfCxZ7WJH0CUD5GamV+flkhp8Pmfpg/kwgEC6kxi8Lij0sDMwsrGwA8HsKzA8AAADmAAAAeJzjY2Bg+MDKwMAGpDmAmJEBAliR+GxgmpkhM8+YgQ/IfsCMXz0jkjhI/QYS1TcQUM+Epl6AgHpmNPUFTKS5x4FE9QIE1KO7/wADaeZPIFF9AonqDZDUsxFQzwRkJUP1STCS5u8NJLqrAUk9EwH1rAwsDOxQPohOy0zNSTGEmGOBZA4LFnOQ3SMA5ZclFmUmJuWkkhM+fmSGaziZ+mDhZUFAHyuKPiifiZmFFYu9nEyE7WUkUx8DFn3E+FMJqu8HA2np6AQB9ejplFR36TLQJ98lYdGHLT0jl38CQF5lYiUDAA1TGs4=" download="unnest_rubricb.mat">unnest_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = unnest(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = unnest(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = unnest(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem3" class="problem col-12">
+<h2 class="problem-name">
+r_nFib
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE5vdiAxOSAxNzowNDo0NyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAJQAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hAxOQBeIDAB4IAXIPAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4RAxOQJQDkAwAeTgGCDwAAACUAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeMQMTmMfAAAAeGAFzDwAAACUAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeCQMTkAXiAwAeJgF1DwAAACUAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeKQMTkAWSAwAeQAF6DwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeGQMTkCUE5AMAHn4BiA==" download="r_nFib_rubricb.mat">r_nFib_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[seq1] = r_nFib(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">seq1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[seq2] = r_nFib(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">seq2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[seq3] = r_nFib(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">seq3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem4" class="problem col-12">
+<h2 class="problem-name">
+recursiveGetPi
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE5vdiAxOSAxNzowNDo0NyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hAxOQxQ7kAwAeIAF4DwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeEQMTkMUD5AMAHj4Bfg8AAAAmAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnjEDE5DFB+QDAB5QAYE=" download="recursiveGetPi_rubricb.mat">recursiveGetPi_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[value1] = recursiveGetPi(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">value1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[value2] = recursiveGetPi(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">value2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[value3] = recursiveGetPi(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">value3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem5" class="problem col-12">
+<h2 class="problem-name">
+determinant
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE5vdiAxOSAxNzowNDo0NyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAJQAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4hAxOYx8AAAB4EAXEPAAAAKQAAAHic42NgYDAAYjYg5oDSIMAK5TNBMSMDM0NmnhGQzcLAysTOAAAedAGFDwAAADAAAAB4nONjYGBwAGI2IOaA0iDACuUzQzEjkMzMM2ZgArI5QerYOJkZ2ThZmKDqATz5Ab0PAAAANwAAAHic42NgYHAAYjYg5oDSIMAK5bNAMSMDM0NmngkDE5AtAFLHycLOyMbBxsHBycDEyMwMAD7AAeo=" download="determinant_rubricb.mat">determinant_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[det1] = determinant(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">det1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>4.0/4.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[det2] = determinant(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">det2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[det3] = determinant(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">det3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[det4] = determinant(in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">det4: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem6" class="problem col-12">
+<h2 class="problem-name">
+mondrian
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,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bkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//+zBAQ0AAADCoKzvX8IcbkABAAAAAAAAAO8GAAD//0tMJA8AAHlRV1w=" download="mondrian_rubricb.mat">mondrian_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[abstract1, path1] = mondrian(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">abstract1: </span><span class="fas fa-check"></span></div><div><span class="variable-name">path1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[abstract2, path2] = mondrian(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">abstract2: </span><span class="fas fa-check"></span></div><div><span class="variable-name">path2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[abstract3, path3] = mondrian(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">abstract3: </span><span class="fas fa-check"></span></div><div><span class="variable-name">path3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem7" class="problem col-12">
+<h2 class="problem-name">
+anagram
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogTW9uIE5vdiAxOSAxNzowNDo0NyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAALwAAAHic42NgYLAAYjYg5gBiFgYIYIXyGaFyjAzMDJl5hgwCUL67Y0hqcgYDAwA3ZgObDwAAADIAAAB4nONjYGBwAGI2IOYAYhYGCGCF8hmBmBNMMzNk5hkxCED5JanFJYZ6JRUlUPUAZgsFHQ8AAAAyAAAAeJzjY2BgcABiNiDmAGIWBghghfIZgZgTTDMzZOYZMwhA+c7BhsbmhgVF+VD1AFsBBFIPAAAAMgAAAHic42NgYHAAYjYg5gBiFgYIYIXyGYGYE0wzM2TmmTAIQPklqcUlRnolFSVQ9QBmSwUgDwAAAC4AAAB4nONjYGCwAGI2IOYAYhYGCGCF8hmhbEYGZobMPFMGASg/MaU4MwdIAwA5BQOeDwAAADIAAAB4nONjYGBwAGI2IOYAYhYGCGCF8hmBmBNMMzNk5pkxCED5JanFJcZ6JRUlUPUAZosFIw==" download="anagram_rubricb.mat">anagram_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = anagram(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = anagram(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = anagram(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
