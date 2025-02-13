@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+html {
+    font-family: 'Open Sans';
+}
+.fa-check {
+    color: forestgreen;
+}
+.fa-times {
+    color: darkred;
+}
+.display-1 {
+    font-size: 2.5em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element {
+    margin-right: 30px;
+}
+.test-case {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.test-header {
+    margin-left: -50px;
+}
+.call {
+    font-family: "Courier New";
+}
+.variable-name {
+    font-family: "Courier New";
+}
+.variable-value {
+    font-family: "Courier New";
+}
+.problem div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exception {
+    color: darkred;
+    font-family: "Courier New";
+    margin-bottom: 0px;
+}
+.problem-row:hover {
+    cursor: pointer;
+}
+.table-responsive {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    margin: 20px;
+}
+h3 {
+    font-size: 130%;
+}
+.warning {
+    color: #c94f00;
+}
+.feedback-points {
+    font-size: 110%;
+}
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+pre {
+display:inline;
+}
+.diffnomatch {
+    background: #e5d5e8;
+}
+.right {
+    background: #dbf2fc;
+}
+.left {
+    background: #f3e9d1;
+}
+.diffsoft {
+    color: #888;
+}
+.diffskip {
+    color: #888;
+    background: #e0e0e0;
+}
+.bold {
+    font-weight:bold;
+}
+.problem-name {
+    font-family: 'Courier New', monospace;
+}
+.merged {
+    background-color: #eaeaea;
+}
+span {
+    font-family: "Courier New";
+}
+.diff-equal {
+    background-color: white;
+}
+.diff-delete {
+    background-color: #FF8A8A;
+    text-decoration: line-through;
+}
+.diff-insert {
+    background-color: lightgreen;
+}
+.diff-invisible {
+    color: white;
+}
+.diff-omitted {
+    color:#b5b5b5;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $(".problem-row").on("click",function(){
+        window.location = $(this).data("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-12">
+<h1 class="display-1">
+Feedback for Emaad Bilal Shamsi (eshamsi3)
+</h1>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+Problem
+</th>
+<th>
+Points Earned (Plus Comments)
+</th>
+<th>
+Points Possible
+</th>
+</tr>
+</thead>
+<tr class="problem-row" data-href="#problem1">
+<td>
+<p>
+1
+</p>
+</td>
+<td>
+<p>
+ABCs_structures
+</p>
+</td>
+<td>
+<p>
+2.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+2.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem2">
+<td>
+<p>
+2
+</p>
+</td>
+<td>
+<p>
+ABCs_structureArrays
+</p>
+</td>
+<td>
+<p>
+3.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+3.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem3">
+<td>
+<p>
+3
+</p>
+</td>
+<td>
+<p>
+halloweenParty
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.7)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem4">
+<td>
+<p>
+4
+</p>
+</td>
+<td>
+<p>
+spookYourTA
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.6)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem5">
+<td>
+<p>
+5
+</p>
+</td>
+<td>
+<p>
+ghostBusters
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem6">
+<td>
+<p>
+6
+</p>
+</td>
+<td>
+<p>
+pumpkinPatch
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem7">
+<td>
+<p>
+7
+</p>
+</td>
+<td>
+<p>
+costumeContest
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.5)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem8">
+<td>
+<p>
+8
+</p>
+</td>
+<td>
+<p>
+trickOrTreat
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<strong>Total</strong>
+</td>
+<td>
+<p>
+81.0 (+2.4)
+</p>
+</td>
+<td>
+<p>
+120.0
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem1" class="problem col-12">
+<h2 class="problem-name">
+ABCs_structures
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogVGh1IE5vdiAgMSAxNTo0ODoyMyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAKwAAAHic42NgYDAAYjYg5gBiFgYIYIXyGaFijAzMDJl5hgwCQJ6hlYkxACB/AlUPAAAAJwAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4RUJyFIbmEjQEAISwCVQ8AAAAuAAAAeJzjY2BgsABiNiDmAGIWBghghfIZoWxGBmaGzDxjBgEo39DIytgUSAMAMsMClA8AAAAnAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnglQnIVh1h9/BgAkRgNfDwAAAFkAAAB4nONjYGA4AcRsQMwBxEwMEMAK5TPCMTNDZp4pUJwFrBYkxgPEzpkllQwMvolZ+UVgfXxAbIFkHgsW89ihNAgIQPmOJTmJeSWJZOsPzcvOyy/PYwAAj4QMcw8AAABdAAAAeJzjY2BguADEbEDMAcRMDBDACuUzwjEzQ2aeGVCchYETKiYExMEliSWpIA0hmbmpUfl5qVD9fEBsgWQuCxZz2aE0CAhA+Y45iUmJuYlk63dOzSspSsxhAACZQQ3SDwAAAC0AAAB4nONjYGCwAGI2IOYAYhYGCGCF8hnhNDNDZp45gwCUH5KZmxqVn5cKADtqBMQPAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMTNDZp4FAxOQJQ7kAwAepgGP" download="ABCs_structures_rubricb.mat">ABCs_structures_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[A1, B1, C1, D1, E1, F1, G1, H1, I1, J1, K1, L1, M1, N1] = ABCs_structures(in1, in2, in3, in4, in5, in6, in7, in8)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>2.0/2.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem2" class="problem col-12">
+<h2 class="problem-name">
+ABCs_structureArrays
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogVGh1IE5vdiAgMSAxNTo0ODoyMyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAagAAAHic42NgYPgBxGxAzAHETAwQwArlM8IxM0NmniFQnIWBHSomCsS5iVn5RQwMKakFJUBecXJGfn4OSD8fEBsgmcuCxVwWKA0CAkCeZ3CkK7o+NpzugQAmIEucSPuYUOxjYnAPYWAAAK4nC+EPAAAAYgAAAHic42NgYPgBxGxAzAHETAwQwArlM8IxM0NmnhFQnIWBHSomCsS5iVn5RQwMKakFJUBecXJGfn4OSD8fEBsgmcuCxVwmKA0CAkCeryumPjac7oEAJiCLl0z7wkIYGABgWAs7DwAAAGcAAAB4nONjYGD4AcRsQMwBxEwMEMAK5TPCMTNDZp4xUJyFgR0qJgrEuYlZ+UUMDCmpBSVAXnFyRn5+Dkg/HxAbIJnLgsVcJigNAgJAnnMwcfqYUfQxMzjnOxOljwVFHwtDZGJOKgCdzw0dDwAAAFUAAAB4nONjYGDYAcRsQMwBxEwMEMAK5TPCMTNDZp4JUJwFLi4AxMn5OTmp6akMxSWJJalAPh8QGyCZx4LFPGYozQA2g5kh1N2RKH1MKPqYGIDaGAApHglgDwAAAHUAAAB4nONjYGBIYGJgYAPSHEAMZIIBK5TPCMTMYJqZITPPFCjOwsAHFdcCYrfE5NSk/PxsiK6Q8sySktQiqBm+jiE+jk7OqXklRYk5UDGQXgMGhH1sWOyDYQawexjBbHrqEyFTHxOd9YmSqY+ZTH0sFLgTABbdEEM=" download="ABCs_structureArrays_rubricb.mat">ABCs_structureArrays_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[A1, B1, C1, D1, E1, F1, G1, H1, I1, J1] = ABCs_structureArrays(in1, in2, in3, in4, in5)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>3.0/3.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem3" class="problem col-12">
+<h2 class="problem-name">
+halloweenParty
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogVGh1IE5vdiAgMSAxNTo0ODoyMyAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAZwAAAHic42NgYFBgZGBgA9IcQAxkggErEp8FTDMzZOYZMvAB2QYMCPUsONVDgACQl5eYmwrSZ0FAHxuKPgg/pCizJD+PAWyvAwH9Amj6QdgtsSwfaESqW2lecklmfh457k9LSysBAK+UD7oPAAAAlgAAAHic42NgYFjByMDABqQ5gBjIBANWJD4bmGZmyMwzYuADsg0YEOpZsKhnQTJHAMjLS8xNBemzIKCPDUUfhO+Ym5iXksgAtteBgH4BNP0g7JZYll+UWZLqVpqXXJKZn0eMO9jRzAHxi0uKSvKzs4lyBzeafhDfpzQ5u9KvNDcptQgsjh6ObFjMYWRAjg8WhgPHdBkA8JwYpQ8AAACjAAAAeJzjY2BgkGBiYGAD0hxAzMgAAaxIfAjNzJCZZ8zAB2QbMCDUs2BRz4JkjgCQl5eYmwrSZ0FAHyuKPgjfJT8npxJIg/Q7ENAvgKYfhN0Sy/KLMktS3Urzkksy8/OIcQc7mjkgPlB/GhAT5Q5uNP0gvk9pcnalX2luUmoRWBw9HNmwmMPIgBwfLAwXfjOSFf6exSGO6Po4mfDbxwRkgdgAdGgZyw==" download="halloweenParty_rubricb.mat">halloweenParty_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = halloweenParty(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = halloweenParty(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = halloweenParty(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem4" class="problem col-12">
+<h2 class="problem-name">
+spookYourTA
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogVGh1IE5vdiAgMSAxNTo0ODoyNCAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAzQAAAHicnY9NC4JAEIbH/Cg6SId+SHXq0CHBgxSEUOBxsRxiSd3Y1aB/36wKiXiQHRhm39l9dub1AeBoA3hUF5QzaMPttEVpN9UGXm6p78C668eUl7RAGESUsFiKe46FYonkVYUlRJi/WYjqxSJRS9W8Cz4o0yeyG6qKXR9C0k8+9ffw38cZ2cfrqo5Vp0+1qnjZ8pse743wVo+f0UnfmXBgyJ1hms/5wKfWQZZxJUqjuUvDfW1DLp7o0x341DoUef41nLsz5BxD7kD1By9JJWgPAAAAgwAAAHic42NgYLBgZGBgA9IcQAxkggErlM8ExYwMzAyZeUYMfEC2BwNCPQuaepB+YSRzBKB8j/D4gKL8pJzU3OL48KLMkpLUPLA8yDwDJPPYsJjHiGQeE5DFBdVHyB1CaO4A8R3LUosS01PjQ1KLS+KDk/OLUhnIcgcz0CX//zMwAAAR8BREDwAAAPEAAAB4nK2SsQrCQAyG43kt4lAcHJx8BtHFVaUqgiLq5FKiPWhFr9Cqg09v1BNruaEGA2ma0K/k/4kHAC0HwKVaoxTwCsf0FUr5rFWIdY/mEppmHlIu8KSgEIvLaafSYBnj7YbBMsnOGWwUPYNJiqEK398NaBBflc6zczwkafGHFB5lHz57SsuejqmPaJh+jlmiDd/J8a6Fr+R4QW8ukwuZXNfC2XTKL50SRtHQL+OPW/Dn0U9Ra4x4+0qmzjaTG5f0R3zpFOD75e7H5s8K95E68vYVTJ3bP3K/3M+vvq5mvD3rTH3cu2mW9KWob7QGuAPMLCoHDwAAAJEAAAB4nONjYGBYwcjAwAakOYAYyAQDViifCYiZweLMDJl5Jgx8QLYHA0I9C5p6kH5hJHMEoHy/0tyk1KL4gMzEqqrE+ID84pJisDzIPAMk89iwmMeIZB4z0EV//0P0ORBwBw+aO0D8kFSgzfHuRYkpqSnk2M8EZDFC9VkQsB85PAWgfEeg5ZllqXnk2AuKBwAvjRZYDwAAAKAAAAB4nONjYGCoYGJgYAPSHEAMZIIBK5TPCMTMYJqZITPPFCjOwsAPFdcFYr/E3FQGBAjITKyqSowPyC8uKQZyHcvS40NSi0vi3YsSU8Dq+IDYggFhHwsW+9igNAgIQPm+ienpmakQ/QZI+tmw6GdE0s8EZLEykKePWPeyorkXxHctyUjMI9NeZjL1pVAQvh6JeXmJGeTZy0Sme+WANAAu2xjADwAAAFcAAAB4nONjYGBYAcRsQMwBxIwMEMAK5TNBxRgZmBky88wY+IBsByT1LGjqQWr5kMwRgPIdy9LjQ1KLS+LdixJTUiFiBkjmsGExhxHJHGagS/7+Z2AAANTQCkQ=" download="spookYourTA_rubricb.mat">spookYourTA_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[spooked1] = spookYourTA(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">spooked1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[spooked2] = spookYourTA(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">spooked2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[spooked3] = spookYourTA(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">spooked3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem5" class="problem col-12">
+<h2 class="problem-name">
+ghostBusters
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogVGh1IE5vdiAgMSAxNTo0ODoyNCAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAxwAAAHic42NgYCjgZmBgA9IcQMzEAAGsUD4jHDMzZOYZAsVZGLigYiJAnJ6RX1wC1pGXWlHik1qWmgPm8QGxAQPCXE4mXOZCABOQxQjV94CLGPfAxGnnHpi+gEHmngOcg8s9BoPMPQs4Bpd7BAaZexrYB4d7YPn9A9vgcA9MX8Igc88F1sHlHodB4h5Y+tnAMjjcA9OnMMjcM4F5cLgHFl8Mg8w9BUyDyz0PGAeXewIGiXtg+g4wDA73MGLRx4bmHhhA6IMAAIbKj/YPAAAAzAAAAHic42NgYCjgZmBgA9IcQMzEAAGsUD4jHDMzZOYZAcVZGLigYiJAnJ6RX1wC1pGXWlHik1qWmgPm8QGxAQPCXE4mXOZCABOQxQjV94CLGPfAxGnnHpi+gEHiHlj4HOAcHO6B6xsk7oGFzwKOweUegUHmngb2weWeD2yDwz0wfQmDzD0XWAeXexwGiXtg6WcDy+BwD0yfwiBzzwTmweEeWHwxDDL3FDANLvc8YBwc7oHpCxgk7oGFzwGGweUeZH1saO6BAYQ+CAAAs6SP+w8AAADFAAAAeJzjY2BgKOBmYGAD0hxAzMQAAaxQPiMcMzNk5hkDxVkYuKBiIkCcnpFfXALWkZdaUeKTWpaaA+bxAbEBA8JcTiZc5kIAE5QF0veAixj3wMRp5x5GqL6AQeaeA5yDwz1wfYPEPbDwWcAxuNwjMMjc08A+uNzzgW1wuSdhkLnnAuvgco/DIHPPBpbB4R6YPoVB5p4JzIPDPbD4Yhhk7ilgGlzuecA4ONwD0xcwSNwDC58DDIPLPcj62NDcAwMIfRAAAM/yj/8=" download="ghostBusters_rubricb.mat">ghostBusters_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[out1] = ghostBusters(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-times"></span> Value Incorrect:<div class="flex-container"><div class="flex-element">Expected:<p><span class="variable-value">8</span></p></div><div class="flex-element">Given:<p><span class="variable-value">7</span></p></div></div></div></div><p class="feedback-points">Points earned for this test case: <b>0.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[out1] = ghostBusters(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-times"></span> Value Incorrect:<div class="flex-container"><div class="flex-element">Expected:<p><span class="variable-value">12</span></p></div><div class="flex-element">Given:<p><span class="variable-value">11</span></p></div></div></div></div><p class="feedback-points">Points earned for this test case: <b>0.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[out1] = ghostBusters(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-times"></span> Value Incorrect:<div class="flex-container"><div class="flex-element">Expected:<p><span class="variable-value">15</span></p></div><div class="flex-element">Given:<p><span class="variable-value">14</span></p></div></div></div></div><p class="feedback-points">Points earned for this test case: <b>0.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem6" class="problem col-12">
+<h2 class="problem-name">
+pumpkinPatch
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,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" download="pumpkinPatch_rubricb.mat">pumpkinPatch_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[pumpkin1] = pumpkinPatch(in1)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">pumpkin1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[pumpkin2] = pumpkinPatch(in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">pumpkin2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[pumpkin3] = pumpkinPatch(in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">pumpkin3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem7" class="problem col-12">
+<h2 class="problem-name">
+costumeContest
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogVGh1IE5vdiAgMSAxNTo0ODoyNCAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAxQAAAHic1ZFNC8IwDIazdpsKMvwpevMoDI8q6MljhOKKo5O1B/XXm9IOnB+sDD0YCPni4U1IBmQxQEphSM7AWeLryI0pcpBqRv0Yxr4/Jc8rZYQ2qIyGHM/C47BCfWryTS2PUmEpzRUyzzV68Uc9ZxOqdlhjCMdaHIN1BUF6vMVx2Av9wqVvuOiBY5TZmeXmHXpJS8/V9sYCwvbte2cIF3Jn6vdcdOiNnu609bKUNzwIU/j+t/7zy7/ynntuxeUv/jmgeAcyBiRzDwAAACsAAAB4nONjYGAwAGI2IOYAYhYGCGCF8hmhYowMzAyZeUYMAkCeb2JxNgAiJAMQDwAAAAQBAAB4nO2U0UrDMBSG/6bd5kCGjyJ447W9GcgmiCBens3DDIZktNlF3mKPbGoKuhHxIAx7sUCb86f5SPg4dAZgfwGM4xwnKKQx6nOB9K1ACW1v4nqFy359Hp/aWc+tJ+tb1LTlHsczr1rtU6ypeV25+Ir1gt55t017Hhq90ZaM9gGzmG/xdY/qx3ukcdXnR1q/scEnf/0Lrw54haWTceUBV+KF25OeJ+HGGa74xqlYdbXE6+jIa5cX2pDFMP389TwJJ/FaCb3m+nVO2nA492vO60ToNdev92xMwGm9DpGTeJ0Kveb69YmCcc0w++6//wNK6HVy5LXLdxycXfPZa8Zrt+cDL6xKgw8AAAAvAAAAeJzjY2BgsABiNiDmAGIWBghghfIZgZgdTDMzZOaZMAhA+eGpScWZJakMADrgBGcPAAAAVQEAAHic3VhNS8QwEJ1tu10VWcRf4kXwvAXxYPWwXrwZMUjp2pR8gO2vN7OpuIUFh6A0aSDNTJrXN52XJqFrALi6BMhte2JrAq4sB39h69m+TaFqrm1/BudD/4uthWg0V5o1WkHBWj7AoWSq/rYLJt9ehb3s7eZgTM1N6+ytablUptLWfpTVe9WwXaU7WGN88BNfdiS+bGixXFivZLKj4JIRLoEHASS+dIRL4ZkrEi4WPgouP4JbHOASa6Hto9+9qXmIeYmFj4Kj6IfP9vz+6hDzMic+in4r8OMr2efk68vccRT9TsHhbn7hy0d8zn9i3U7IeOd3LDiKjpgnio4rGOuI/q0UvbBHpjnpGOK8oeiIY3z4tuxj8veLRYf/XE+R3yfOjRBB5mVOulP0w3s+59GN6fup9/sQdJ9aP+yn7IPLEZ/z75iUHYSpRyzz5q/WUfwf9AVOUInjDwAAADIAAAB4nONjYGBwAGI2IOYAYhYGCGCF8hmBmBNMMzNk5pkxCED5waUFqUXFpZklUPUAaewFdg==" download="costumeContest_rubricb.mat">costumeContest_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[results1, losers1] = costumeContest(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">results1: </span><span class="fas fa-check"></span></div><div><span class="variable-name">losers1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[results2, losers2] = costumeContest(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">results2: </span><span class="fas fa-check"></span></div><div><span class="variable-name">losers2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[results3, losers3] = costumeContest(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">results3: </span><span class="fas fa-check"></span></div><div><span class="variable-name">losers3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem8" class="problem col-12">
+<h2 class="problem-name">
+trickOrTreat
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,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" download="trickOrTreat_rubricb.mat">trickOrTreat_rubricb.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[bag1, path1] = trickOrTreat(in1, in2, in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>trickOrTreat.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[bag2, path2] = trickOrTreat(in4, in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>trickOrTreat.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/7.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[bag3, path3] = trickOrTreat(in7, in8, in9)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">STUDENT:fileNotSubmitted - File <code>trickOrTreat.m</code> wasn't submitted, so the function was not graded.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

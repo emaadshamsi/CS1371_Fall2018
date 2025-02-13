@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+html {
+    font-family: 'Open Sans';
+}
+.fa-check {
+    color: forestgreen;
+}
+.fa-times {
+    color: darkred;
+}
+.display-1 {
+    font-size: 2.5em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element {
+    margin-right: 30px;
+}
+.test-case {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.test-header {
+    margin-left: -50px;
+}
+.call {
+    font-family: "Courier New";
+}
+.variable-name {
+    font-family: "Courier New";
+}
+.variable-value {
+    font-family: "Courier New";
+}
+.problem div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exception {
+    color: darkred;
+    font-family: "Courier New";
+    margin-bottom: 0px;
+}
+.problem-row:hover {
+    cursor: pointer;
+}
+.table-responsive {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    margin: 20px;
+}
+h3 {
+    font-size: 130%;
+}
+.warning {
+    color: #c94f00;
+}
+.feedback-points {
+    font-size: 110%;
+}
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+pre {
+display:inline;
+}
+.diffnomatch {
+    background: #e5d5e8;
+}
+.right {
+    background: #dbf2fc;
+}
+.left {
+    background: #f3e9d1;
+}
+.diffsoft {
+    color: #888;
+}
+.diffskip {
+    color: #888;
+    background: #e0e0e0;
+}
+.bold {
+    font-weight:bold;
+}
+.problem-name {
+    font-family: 'Courier New', monospace;
+}
+.merged {
+    background-color: #eaeaea;
+}
+span {
+    font-family: "Courier New";
+}
+.diff-equal {
+    background-color: white;
+}
+.diff-delete {
+    background-color: #FF8A8A;
+    text-decoration: line-through;
+}
+.diff-insert {
+    background-color: lightgreen;
+}
+.diff-invisible {
+    color: white;
+}
+.diff-omitted {
+    color:#b5b5b5;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $(".problem-row").on("click",function(){
+        window.location = $(this).data("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-12">
+<h1 class="display-1">
+Feedback for Emaad Bilal Shamsi (eshamsi3)
+</h1>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+Problem
+</th>
+<th>
+Points Earned (Plus Comments)
+</th>
+<th>
+Points Possible
+</th>
+</tr>
+</thead>
+<tr class="problem-row" data-href="#problem1">
+<td>
+<p>
+1
+</p>
+</td>
+<td>
+<p>
+ABCs_plotting
+</p>
+</td>
+<td>
+<p>
+2.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+2.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem2">
+<td>
+<p>
+2
+</p>
+</td>
+<td>
+<p>
+ABCs_numericalMethods
+</p>
+</td>
+<td>
+<p>
+3.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+3.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem3">
+<td>
+<p>
+3
+</p>
+</td>
+<td>
+<p>
+pokemonAthon
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.6)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem4">
+<td>
+<p>
+4
+</p>
+</td>
+<td>
+<p>
+safariZone
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.3)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem5">
+<td>
+<p>
+5
+</p>
+</td>
+<td>
+<p>
+levelUp
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.6)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem6">
+<td>
+<p>
+6
+</p>
+</td>
+<td>
+<p>
+rootChopper
+</p>
+</td>
+<td>
+<p>
+12.0 (+0.3)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem7">
+<td>
+<p>
+7
+</p>
+</td>
+<td>
+<p>
+whosDatPokemon
+</p>
+</td>
+<td>
+<p>
+19.0 (+0.3)
+</p>
+</td>
+<td>
+<p>
+19.0
+</p>
+</td>
+</a>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<strong>Total</strong>
+</td>
+<td>
+<p>
+93.0 (+2.2)
+</p>
+</td>
+<td>
+<p>
+100.0
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem1" class="problem col-12">
+<h2 class="problem-name">
+ABCs_plotting
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,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" download="ABCs_plotting_rubrica.mat">ABCs_plotting_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = ABCs_plotting(in1, in2, in3, in4, in5, in6, in7, in8)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>2.0/2.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem2" class="problem col-12">
+<h2 class="problem-name">
+ABCs_numericalMethods
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogV2VkIE5vdiAgNyAxMToyOTo1MSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAVQAAAHic42NgYJgAxGxAzAGlQYAVymcEYh4wzcyQmWfIwAlkJzAgwKyZIHDS/mGVyDr3h6fsIaIfoDSDA4TigNICUFrBwRgMFKB8JQjd4AXlezsAAKA+ER8PAAAAVwAAAHic42NgYJgAxGxAzAGlQYAVymcEYh4wzcyQmWfEwAlkJzDAwAd7CK3kAKFtoDQHlA5ygMlvKMqY+LZmP1S9gMPZMyAg4gDjw/Stc39YJbLusz0AhNgUVw8AAAAoAAAAeJzjY2BgMABiNiDmgNIgwArlMwIxC5hmZsjMM2ZgAvEYmZgBHnABfw==" download="ABCs_numericalMethods_rubrica.mat">ABCs_numericalMethods_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1, out2, out3, out4, out5, out6, out7, out8, out9, out10, out11] = ABCs_numericalMethods(in1, in2, in3)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>3.0/3.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem3" class="problem col-12">
+<h2 class="problem-name">
+pokemonAthon
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogV2VkIE5vdiAgNyAxMToyOTo1MSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAMwAAAHic42NgYHAAYjYg5oDSIMAK5TMCMQ+YZmbIzDNkYILyGRiZWdk5ODk42VlBShkAPjIB2g8AAAAzAAAAeJzjY2BgcABiNiDmgNIgwArlMwIxD5hmZsjMM2JggvIZGJmYWVjZ2Dk4ubhBXAA9+gHaDwAAADsAAAB4nONjYGCIAGI2IOaA0iDACuUzQtmMDMwMmXnGDJxAtgYDAsyaCQIf7SE8IYezZ0BACkqLOAAAXBsRJg8AAAAsAAAAeJzjY2BgsABiNiDmgNIgwArlM0LZjAzMDJl5JgxMUD4DIwsrO5ACACyUAZUPAAAAKAAAAHic42NgYLAAYjYg5oDSIMAK5TPCaWaGzDxTBiYon4GRiRkEAC0KAZ0PAAAAKwAAAHic42NgYLAAYjYg5oDSIMAK5TPCaWaGzDwzBiYon4GRiZmVnZMLAC1DAbE=" download="pokemonAthon_rubrica.mat">pokemonAthon_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = pokemonAthon(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = pokemonAthon(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = pokemonAthon(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem4" class="problem col-12">
+<h2 class="problem-name">
+safariZone
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogV2VkIE5vdiAgNyAxMToyOTo1MSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAKQAAAHic42NgYDAAYjYg5oDSIMAK5TMCMQuYZmbIzDNkYALyOFkYmQEehwGIDwAAACgAAAB4nONjYGAwAGI2IOaA0iDACuUzAjETmGZmyMwzArKBPCMGBgAevgGmDwAAADAAAAB4nONjYGBwAGI2IOaA0iDACuUzAjEnmGZmyMwzZmCC8jkYOJnZGJk5mKDqAT00AbsPAAAAKAAAAHic42NgYDAAYjYg5oDSIMAK5TMCMROYZmbIzDMBsoE8EQYGAB54AYoPAAAAKAAAAHic42NgYDAAYjYg5oDSIMAK5TMCMQuYZmbIzDNlYALyWIEAAB6sAY8PAAAAKgAAAHic42NgYDAAYjYg5oDSIMAK5TMCMROYZmbIzDMDkiwMb/6nMAAAJdkDyg==" download="safariZone_rubrica.mat">safariZone_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = safariZone(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = safariZone(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = safariZone(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem5" class="problem col-12">
+<h2 class="problem-name">
+levelUp
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogV2VkIE5vdiAgNyAxMToyOTo1MSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAVAAAAHic42NgYEgAYjYg5oDSIMAK5TMDMTsQMwJZmXmGDCxAthYQszDoAPXNZDBmtGf0ZtjMcISBmVGGUY8xn4GdUYDRgMGJ4QRDJ8NrhgZGiHkAOoEJOg8AAAAmAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnhEDE5BlBOQDAB7WAaQPAAAAcQAAAHic42NgYKgAYjYg5oDSIMAK5YNodiBmZGBmyMwzZmABst2AWJxBisEYyPJhsGCwYbjNkMrYwJjEkMaQweDGGMjoz5DK0MPwnaGEsZdhH8MdhtcMvozFDDMZ9Bj1GfMZxRjkGa4yPGGwYGRgAADLmBEPDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeCQMTkJUC5AMAH7IB2A8AAAClAAAAeJwtjj0LgQEUhZ+Tz9dXklglAyNhYTEZiPKxYFAyWEz+hLL4R5LiB1gNFoXdQnHJPT3de4dzz40AG8Nr+P/9W57/HjB8hnAxm5dw27wyHEJEiJMiR5kGbbokqNJkbzoTVVJ9LSS7fuTGg7qGGmtlGjHhwIU7QWVVU1czpbmanjjKqKipOZfyESZPjy0n87/oaKCYZRaoWE7LEtfseP/+/QCa3x/KDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeGQMTkJUM5AMAH8IB2Q==" download="levelUp_rubrica.mat">levelUp_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[newStats1] = levelUp(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">newStats1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[newStats2] = levelUp(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">newStats2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[newStats3] = levelUp(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">newStats3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>7.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem6" class="problem col-12">
+<h2 class="problem-name">
+rootChopper
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogV2VkIE5vdiAgNyAxMToyOTo1MSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAMQAAAHic42NgYHAAYjYg5oDSIMAK5TNC2YwMzAyZeYZAkoGBC4jf/P/2H8QSgaoHAHPKBY0PAAAALgAAAHic42NgYLAAYjYg5oDSIMAK5TMCMQuYZmHIzDM0YIaKP/rPwsDFwM0AAD3HA68PAAAAJgAAAHic42NgYDAAYjYg5oDSIMAK5TPCMQtDZp6hIROQZQPkAwAguwHfDwAAACYAAAB4nONjYGAwAGI2IOaA0iDACuUzwjELQ2aeoRETkCUH5AMAIEwBwg8AAAAxAAAAeJzjY2BgcABiNiDmgNIgwArlM0LZjAzMDJl5RkCSgYELiP/9//8fJMoEVQ8AdJgFjg8AAAAnAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnjGQZGL4/Z+BAQAlDwNvDwAAACUAAAB4nONjYGAwAGI2IOaA0iDACuUzwjEzQ2aeCQMTkAWSAwAeNgF5DwAAACkAAAB4nONjYGAwAGI2IOaA0iDACuUzAjELmGZmyMwzZWAC8gSVLJwBH9cCKQ8AAAAoAAAAeJzjY2BgMABiNiDmgNIgwArlMwIxC5hmZsjMM2NgAvEUeWwAHzsB5Q8AAAAlAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmnjkDE5jHwAAAHkABdw8AAAAmAAAAeJzjY2BgMABiNiDmgNIgwArlM8IxM0NmngUDE5AlB+QDAB7CAZYPAAAALAAAAHic42NgYLAAYjYg5oDSIMAK5TMCMQuYZmbIzLMEkhBxRwZFoNjv/wAyeQPp" download="rootChopper_rubrica.mat">rootChopper_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[spot] = rootChopper(in1, in2, in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">spot: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[spot] = rootChopper(in5, in6, in7, in8)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">spot: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[spot] = rootChopper(in9, in10, in11, in12)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">spot: </span><span class="fas fa-times"></span> Value Incorrect:<div class="flex-container"><div class="flex-element">Expected:<p><span class="variable-value">45</span></p></div><div class="flex-element">Given:<p><span class="variable-value">40.35</span></p></div></div></div></div><p class="feedback-points">Points earned for this test case: <b>0.0/7.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem7" class="problem col-12">
+<h2 class="problem-name">
+whosDatPokemon
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="data:application/octet-stream;base64,TUFUTEFCIDUuMCBNQVQtZmlsZSwgUGxhdGZvcm06IE1BQ0k2NCwgQ3JlYXRlZCBvbjogV2VkIE5vdiAgNyAxMToyOTo1MSAyMDE4ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAAAAAAAAAAAAABSU0PAAAAMAAAAHic42NgYHAAYjYg5oDSIMAK5TMCMReYZmbIzDNkYILxmZhZWNnYOTi5IOoBPXAByg8AAAAqAAAAeJzjY2BgcABiNiDmgNIgwArlMwIxF5hmZsjMM2JggvLZ4QCiHgA+iQHaDwAAAEQAAAB4nONjYGCoAGI2IOaA0iDACuUzAjEnmGZmyMwzBrM9GGDA0wFMHXCH0A1uENrBFUIzuEDlnaDyjlB5B6i8nQMA0fEJsQ8AAABEAAAAeJzjY2BgqABiNiDmgNIgwArlMwIxJ5hmZsjMMwGzPRhgwM4BTDk4QOgGRwh9wAlCM7hA5V2h8m5QeXeovKcDAL1jCbIPAAAAKQAAAHic42NgYLAAYjYg5oDSIMAK5TNC2YwMzAyZeaYMTFA+FwgAaQAtfgG3DwAAADMAAAB4nONjYGBwAGI2IOaA0iDACuUzQtmMDMwMmXlmQJKBgQuIjRiiGJb9X/Y/CqoeAGg8BcQPAAAALQAAAHic42NgYJgBxGxAzAGlQYAVymcE4hQwzcyQmWfOwATls4ABK00pkDsAp8QEQw8AAAArAAAAeJzjY2BgmAHEbEDMAaVBgBXKZwTiFDDNzJCZZ8HABOUH0AGA3AEA96kh5g==" download="whosDatPokemon_rubrica.mat">whosDatPokemon_rubrica.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = whosDatPokemon(in1, in2)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>4.0/4.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = whosDatPokemon(in3, in4)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = whosDatPokemon(in5, in6)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[] = whosDatPokemon(in7, in8)
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"></div><p class="feedback-points">Points earned for this test case: <b>5.0/5.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

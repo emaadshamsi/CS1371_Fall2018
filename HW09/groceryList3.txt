@@ -1,0 +1,17 @@
+Apples 1
+Bannanas 1
+Milk 1
+Eggs 1
+Cheese 1
+Butter 1
+Bagels 1
+Bread 1
+Spaghetti 1
+Penne 1
+Hamburgers 1
+Coca-Cola 1
+Lemonaid 1
+Cake 1
+Oreos 1
+Brownies 1
+Cookies 1
